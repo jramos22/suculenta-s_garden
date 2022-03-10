@@ -1,0 +1,48 @@
+.content-dropdown{
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.content-dropdown h2{
+  text-align: left;
+}
+
+details ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+details ul li{
+  background-color: $dark-brown;
+  border: 1px solid rgba($color: #fff, $alpha: 0.3);
+  font-size: 16px;
+  list-style: none;
+  padding: 15px 0px 15px 120px;
+  width: 333px;
+}
+
+details li a{
+  color: $white;
+
+  text-decoration: none;
+}
+
+details li a:hover{
+  color: $light-brown-hover;
+}
+
+summary{
+  background-color: $dark-brown;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-family: $bebas-neue;
+  font-size: 30px;
+  padding: 10px 12px;
+  outline: 0;
+  width: 431px;
+}
+
+summary:hover{
+  color: $light-brown-hover;
+}

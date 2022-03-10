@@ -1,0 +1,60 @@
+#accordion{
+  display: none;
+}
+@media(max-width: 525px){
+  #accordion{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+  #accordion .accordion__content--info{
+    display : none;
+  }
+
+  #accordion .active .accordion__content--info{
+    display : block;
+  }
+  .accordion__content{
+    width: 100%;
+  }
+  .accordion__content--title{
+    cursor: pointer;
+    background-color:$dark-brown;
+    color: $white;
+    display: block;
+    font-size: 20px;
+    padding: 15px 15px;
+    padding-left: 40px;
+    text-align: left;
+  }
+  .accordion__content--title::after{
+    content: "❯";
+    width: 16px;
+    height: 16px;
+    transition: all 0.35s;
+    float: right;
+  }
+  .accordion__content--title:hover{
+    background-color: $light-brown-hover;
+    color: $white;
+  }
+  .accordion__info{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .accordion__info span{
+    font-weight: bold;
+  }
+  .gallery {
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    width: 390px;
+  }
+  .accordion__info--addCard{
+    margin-left: 100px;
+    text-align: center;
+    width: 296px;
+  }
+}
